@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/favicon-32x32.version1.png" type="image/x-icon" sizes="32x32">
+    <title>Cool Blue</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content d-sm-none">
+            <a href="index.html" style="margin: 0px; padding: 0px;display: flex;">
+                <img src="images/logo.png" alt="logo societe" srcset="" class="mr-2">
+            </a>
+            <div class="categories">
+                voir toutes <br>
+                <span>les categories <i class="fa-solid fa-angle-down"></i></span>
+            </div>
+            <div class="search">
+                <input type="text" id="search-value" name="search" value="Casserole Teffal" required minlength="4" maxlength="8" size="10">
+                <span class="fas fa-magnifying-glass errspan"></span>
+                <span class="fas fa-circle-xmark close"></span>
+            </div>
+            <div class="features">
+                <h5 class="bold d-md-none">FR <i class="fa-solid fa-angle-down"></i></h5>
+                <h4>
+                    <i class="fa-regular fa-user"></i> <span class="d-md-none">Compte
+                    </span><i class="fa-solid fa-angle-down d-md-none"></i>
+                </h4>
+                <h4><i class="fa-regular fa-heart"></i></h4>
+                <h4><i class="fa-solid fa-cart-shopping"></i> <i class="fa-solid fa-angle-down d-md-none"></i></h4>
+            </div>
+        </div>
+        <div class="header-content-sm">
+            <i class="fa-solid fa-bars fa-3x"></i>
+            <a href="index.html" style="margin: 0px; padding: 0px;display: flex;">
+                <img src="images/logo.png" alt="logo societe" srcset="" class="">
+            </a>
+            <div class="features">
+                <h5 class="bold d-md-none">FR <i class="fa-solid fa-angle-down"></i></h5>
+                <h4>
+                    <i class="fa-regular fa-user"></i> <span class="d-md-none">Compte
+                    </span>
+                </h4>
+                <h4><i class="fa-regular fa-heart"></i></h4>
+                <h4><i class="fa-solid fa-cart-shopping"></i> </h4>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="site-header d-sm-none">
+            <div class="informations">
+                <p class="mr-1">
+                    <span class="vert"><i class="fa-solid fa-check"></i></span> Commandé avant <span class="orange">23 h 59</span>, Livré gratuitement demain
+                </p>
+                <p class="mr-1">
+                    <span class="vert"><i class="fa-solid fa-check"></i></span> Echange <span class="orange">gratuit</span>
+                </p>
+                <p class="mr-1 d-md-none">
+                    <span class="vert"><i class="fa-solid fa-check"></i></span> Retrait Immediat dans <span class="orange">6 Magasins</span>
+                </p>
+                <p class="mr-1 d-md-none">
+                    <span class="vert"><i class="fa-solid fa-check"></i></span> Notre Appli
+                </p>
+            </div>
+            <div class="actions d-sm-none">
+                <a href="#" class="d-md-none">Bussiness</a>
+                <a href="#" class="d-md-none">Magasins</a>
+                <a href="#">Service Client</a>
+            </div>
+        </div>
+        <nav class="d-sm-none">
+            <i class="fa-solid fa-house bleue"></i>
+            <a href="#">Ordinateurs & Tablettes</a>
+            <a href="#">Telephonie</a>
+            <a href="#">Télé & Audio</a>
+            <a href="#">Cuisine</a>
+            <a href="#">Ménage & Habitat</a>
+            <a href="#" class="d-md-none">Sport, Soin & Beauté</a>
+            <a href="#" class="d-md-none">Photo & Video</a>
+            <a href="#" class="d-md-none">GPS, Voyage & Mode</a>
+            <a href="#" class="d-md-none">Jardin & Bricolage</a>
+        </nav>
+        <div class="main-content">
+            <div class="filter-product pt-2 d-sm-none">
+                <h5>Catégorie</h5>
+                <h6>Toutes Les Categories</h6>
+                <p class="second">Couvercles à Poêles <span>(4)</span> </p>
+                <p class="second">Poêles <span>(5)</span></p>
+                <h5 class="mt-1">Prix</h5>
+                <p class="price-range">
+                    € <input type="text" name="start-price" id="start" placeholder="15"> jusqu'à <input type="text" name="end-price" id="end" placeholder="93"> <i class="fa-solid fa-square-caret-right"></i>
+                </p>
+
+                <h5 class="mt-1">Deuxième Chance</h5>
+                <p class="second"><input type="checkbox" id="chance" name="chance2"> Oui <span>(1)</span></p>
+
+                <h5 class="mt-1">Note</h5>
+                <div class="rate">
+                    <input type="radio" id="choice" name="choix1">
+                    <div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <span> (0)</span>
+                </div>
+                <div class="rate">
+                    <input type="radio" id="choice" name="choix1">
+                    <div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="nofill-star"><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <p>et Plus <span> (9)</span></p>
+                </div>
+                <div class="rate">
+                    <input type="radio" id="choice" name="choix1">
+                    <div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="nofill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="nofill-star"><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <p>et Plus <span> (9)</span></p>
+                </div>
+                <div class="rate">
+                    <input type="radio" id="choice" name="choix1">
+                    <div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="nofill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="nofill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="nofill-star"><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <p>et Plus <span> (9)</span></p>
+                </div>
+                <div class="rate">
+                    <input type="radio" id="choice" name="choix5">
+                    <div>
+                        <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="nofill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="nofill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="nofill-star"><i class="fa-solid fa-star"></i></div>
+                        <div class="nofill-star"><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <p>et Plus <span> (9)</span></p>
+                </div>
+                <div class="rate">
+                    <input type="radio" id="choice" name="choix6" checked>
+                    <p>Voir Tout</p>
+                </div>
+
+
+            </div>
+            <div class="product-list">
+                <div class="result-list d-sm-none">
+                    <div> <b>9</b> &nbsp;résultats pour 'casseroles tefal' <span>|</span> Filtrer par :
+                        <select name="choix" id="choix">
+                        <option value="volvo">Pertinence</option>
+                      </select></div>
+                </div>
+                <div class="filter-sm">
+                    <i class="fa-solid fa-sliders bleue"></i>
+                    <p>9 résultats</p>
+                </div>
+                <div class="list">
+                    <div class="col-md-3">
+                        <img src="images/casserole-28.png" alt="">
+                        <h5 class="bleue">Tefal Couvercle Verre 28 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>18,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="images/casserole-26.png" alt="">
+                        <h5 class="bleue">Tefal Couvercle Verre 26 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>19,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                        <p class="second"><span class="bleue">Deuxième Chance intéressant </span> <b>de 18-</b></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="images/casserole-24.png" alt="">
+                        <h5 class="bleue">Tefal Couvercle Verre 24 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>15,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+                </div>
+                <div class="informations-2 d-md-none">
+                    <p class="mr-1">
+                        <span class="vert"><i class="fa-solid fa-check"></i></span> Commandé avant <span class="orange">23 h 59</span>, Livré gratuitement demain
+                    </p>
+                    <p class="mr-1">
+                        <span class="vert"><i class="fa-solid fa-check"></i></span> Echange <span class="orange">gratuit</span>
+                    </p>
+                    <p class="mr-1">
+                        <span class="vert"><i class="fa-solid fa-check"></i></span> Webshop <span class="orange">le Plus Convivial</span> de 2021
+                    </p>
+                </div>
+                <div class="list">
+                    <div class="col-md-3">
+                        <img src="images/casserole-30.png" alt="">
+                        <h5 class="bleue">Tefal Couvercle Verre 30 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>19,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="images/nordica-casserole-18.png" alt="">
+                        <h5 class="bleue">Tefal Nordica Casserole 18 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+                            Casserole | Tables de cuisson électriques, au gaz, à induction, vitrocéramiques, four
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>19,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                        <p class="second"><span class="bleue">Deuxième Chance intéressant </span> <b>de 18-</b></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="images/4-casseroles-duetto.png" alt="">
+                        <h5 class="bleue">Ensemble de 4 casseroles Tefal Duetto</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+                            Convient pour toutes les sources de chaleur | 3 faitouts, 1 poêlon | Avec graduation
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>15,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+                </div>
+                <div class="informations-2 d-md-none">
+                    <p class="mr-1">
+                        <span class="vert"><i class="fa-solid fa-check"></i></span> Commandé avant <span class="orange">23 h 59</span>, Livré gratuitement demain
+                    </p>
+                    <p class="mr-1">
+                        <span class="vert"><i class="fa-solid fa-check"></i></span> Echange <span class="orange">gratuit</span>
+                    </p>
+                    <p class="mr-1">
+                        <span class="vert"><i class="fa-solid fa-check"></i></span> Webshop <span class="orange">le Plus Convivial</span> de 2021
+                    </p>
+                </div>
+                <div class="list">
+                    <div class="col-md-3">
+                        <img src="images/casserole-28.png" alt="">
+                        <h5 class="bleue">Tefal Couvercle Verre 28 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>18,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="images/casserole-26.png" alt="">
+                        <h5 class="bleue">Tefal Couvercle Verre 26 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>19,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                        <p class="second"><span class="bleue">Deuxième Chance intéressant </span> <b>de 18-</b></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="images/casserole-24.png" alt="">
+                        <h5 class="bleue">Tefal Couvercle Verre 24 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>15,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+                </div>
+                <div class="list-md">
+                    <div class="pic-part">
+                        <img src="images/casserole-24.png" alt="">
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+                    <div class="descriptions">
+                        <h5 class="bleue">Tefal Couvercle Verre 24 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>15,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-md">
+                    <div class="pic-part">
+                        <img src="images/casserole-26.png" alt="">
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+                    <div class="descriptions">
+                        <h5 class="bleue">Tefal Couvercle Verre 26 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>18,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-md">
+                    <div class="pic-part">
+                        <img src="images/4-casseroles-duetto.png" alt="">
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+                    <div class="descriptions">
+                        <h5 class="bleue">Ensemble de 4 casseroles Tefal Duetto</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+                            Convient pour toutes les sources de chaleur | 3 faitouts, 1 poêlon | Avec graduation
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>15,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-md">
+                    <div class="pic-part">
+                        <img src="images/casserole-28.png" alt="">
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+                    <div class="descriptions">
+                        <h5 class="bleue">Tefal Couvercle Verre 28 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>15,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-md">
+                    <div class="pic-part">
+                        <img src="images/nordica-casserole-18.png" alt="">
+                        <p class="second"><input type="checkbox" id="comparer" name="comparer"> Comparer</p>
+                    </div>
+                    <div class="descriptions">
+                        <h5 class="bleue">Tefal Nordica Casserole 18 cm</h5>
+                        <div class="rate">
+                            <div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="fill-star"><i class="fa-solid fa-star"></i></div>
+                                <div class="middlefill-star"><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <span class="bleue"> 65 avis</span>
+                        </div>
+                        <div class="highlight">
+                            Casserole | Tables de cuisson électriques, au gaz, à induction, vitrocéramiques, four
+                        </div>
+                        <div class="data-product">
+                            <div class="price">
+                                <h4>19,99</h4>
+                                <h6 class="vert"><i class="fa-solid fa-circle-check"></i> Livré demain</h6>
+                            </div>
+                            <div class="add-caret vert">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <p>Restez Connectés Sur Nos Reseaux Sociaux</p>
+                <p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </p>
+            </div>
+            <div class="links">
+                <div class="company">
+                    <a href="index.html" style="margin: 0px; padding: 0px;display: flex;">
+                        <img src="images/logo.png" alt="logo societe" srcset="" class="mr-2">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores hic in deserunt explicabo necessitatibus rem aspernatur vero perspiciatis nisi et similique voluptas.</p>
+                </div>
+                <div class="magasins d-sm-none">
+                    <h4>Nos Magasins</h4>
+                    <p class="mt-1">Bruxelles</p>
+                    <p>Gand</p>
+                    <p>Hasselt</p>
+                    <p>Kuurne</p>
+                    <p>Wirljik</p>
+                    <p>Zaventem</p>
+                </div>
+                <div class="action">
+                    <h4>Service Client</h4>
+                    <a href="commande.html" class="mt-1">Commander</a>
+                    <a href="#">Payer</a>
+                    <a href="#">Livraison et Installation</a>
+                    <a href="#">Echanges et Retour</a>
+                    <a href="#">Garantie & Reparation</a>
+                    <a href="#">Magasins</a>
+                    <a href="#">Connexion</a>
+                </div>
+                <div class="a-propos">
+                    <h4>A-Propos</h4>
+                    <a href="#" class="mt-1">Confidentialité</a>
+                    <a href="politique.html">Politique</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Actu</a>
+                    <a href="#">l'Application</a>
+                </div>
+            </div>
+            <div class="copiright mt-1">
+                <p>@ Copyright 2022</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
