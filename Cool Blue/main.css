@@ -161,6 +161,14 @@ main .site-header .informations {
     flex-direction: row;
 }
 
+.header-content-sm {
+    display: none;
+}
+
+.list-md {
+    display: none;
+}
+
 main .site-header .actions {
     display: flex;
     flex-direction: row;
