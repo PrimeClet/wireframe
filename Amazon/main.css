@@ -363,3 +363,178 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.libelle {
+    padding-top: 12px;
+    font-size: 16px;
+}
+
+.libelle p:nth-child(1) {
+    font-weight: bolder;
+}
+
+.libelle p:nth-child(2) {
+    color: #636262;
+}
+
+.list__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.data__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: calc(99% / 4);
+}
+
+.image {
+    margin-top: 48px;
+    margin-bottom: 28px;
+    padding: 0px 10px 0px 10px;
+}
+
+.image img {
+    width: 270px;
+    height: 218px;
+}
+
+.details .second {
+    font-size: 12px;
+}
+
+.details h3 {
+    font-weight: 400px;
+}
+
+.details h3 span {
+    font-size: 13px;
+    font-weight: 600 !important;
+    color: #636262;
+}
+
+.colors {
+    color: white;
+    padding: 5px 10px 5px 10px;
+    background-color: #c02929;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #131921;
+    color: white;
+    font-size: 13px;
+    margin-top: 23px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 151.5px 0px 151.5px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.links div {
+    display: flex;
+    flex-direction: column;
+    width: calc(80% / 4);
+}
+
+.company img {
+    width: 83px;
+    height: 52px;
+}
+
+.company p {
+    text-align: justify;
+}
+
+.magasins {
+    font-size: 14px;
+}
+
+.action a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.a-propos a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.copiright {
+    font-size: large;
+    display: flex;
+    font-size: 13px;
+    flex-direction: row;
+    justify-content: end
+}
+
+.pol {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 3% 10% 3% 10%;
+    font-size: 15px;
+    /* width: 100%; */
+}
+
+.pol p:nth-child(1) {
+    font-size: xxx-large;
+    text-align: center;
+    background-color: #131921;
+    color: aliceblue;
+}
+
+table {
+    font-size: 13px;
+    border: 1px solid greenyellow;
+    text-align: center;
+}
+
+thead th {
+    background-color: khaki;
+    color: red;
+}
+
+tbody td:nth-child(1),
+td:nth-child(2),
+td:nth-child(4) {
+    color: red;
+}
+
+tbody td:nth-child(3),
+td:nth-child(5) {
+    color: #0090e3;
+}
+
+tfoot td {
+    background-color: khaki;
+}
+
+tfoot td:nth-child(1) {
+    color: red;
+}
+
+tfoot td:last-child {
+    color: #0090e3;
+}
